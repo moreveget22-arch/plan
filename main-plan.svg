@@ -1,0 +1,446 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="layout-svg hide-open-area-zones" width="730" height="745.568" viewBox="0 0 730 745.568" role="img" aria-labelledby="_R_53_-title" aria-describedby="_R_53_-desc" style="pointer-events:none"><style>:root { font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif; color: #25392f; background: #f7f8f4; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; line-height: 1.6; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 0; }
+button, input { font: inherit; }
+button { cursor: pointer; transition: background-color 150ms ease, border-color 150ms ease; }
+button:focus-visible, a:focus-visible { outline: 3px solid #9da75b; outline-offset: 4px; }
+a { color: inherit; }
+h1, h2, p { margin: 0; }
+::selection { background: #d4e3c7; }
+
+#root { min-height: 100vh; }
+button, input, textarea { font: inherit; }
+button { color: inherit; border: 0; }
+button, input, textarea { -webkit-tap-highlight-color: transparent; }
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 72px; padding: 14px max(24px, calc((100vw - 1280px) / 2)); background: #fcfcf8; border-bottom: 1px solid #dde4d6; }
+.brand { display: flex; align-items: center; gap: 11px; font-size: 14px; font-weight: 650; }
+.brand small { display: block; font-size: 9px; letter-spacing: 1.5px; color: #88947c; }
+.brand-mark { display: grid; place-items: center; width: 34px; height: 34px; background: #405b47; border-radius: 8px; color: #e3ebcf; font-size: 28px; }
+.header-actions { display: flex; gap: 8px; }
+.primary-button, .secondary-button { padding: 9px 14px; border-radius: 7px; min-height: 38px; font-size: 11px; font-weight: 550; white-space: nowrap; }
+.primary-button { color: #fffdf4; background: #526f44; }
+.secondary-button { color: #5f7750; background: #eff3e8; border: 1px solid #dce5d3; }
+button:disabled { cursor: default; opacity: .55; }
+.text-button { padding: 5px 0; background: transparent; color: #607d4c; text-decoration: underline; text-underline-offset: 4px; font-size: 11px; }
+main { max-width: 1328px; margin: 0 auto; padding: 24px; }
+.plan-heading { display: flex; justify-content: space-between; gap: 18px; align-items: center; margin-bottom: 21px; }
+.eyebrow { font-size: 9px; color: #8b987d; font-weight: 650; letter-spacing: 1.7px; margin-bottom: 4px; }
+h1 { font-size: 27px; font-weight: 650; letter-spacing: -1px; }
+.plan-heading p:last-child { font-size: 12px; color: #7a8970; margin-top: 5px; }
+.model-tag { display: inline-block; padding: 5px 9px; border-radius: 5px; color: #7e8c6f; background: #edf1e4; font-size: 10px; }
+.plan-options { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 12px; padding: 17px 20px; border: 1px solid #dce4d3; border-radius: 10px; background: #fcfcf7; }
+.plan-options fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.plan-options legend { padding: 0; margin-bottom: 8px; color: #5c7250; font-size: 11px; font-weight: 650; }
+.option-segments { display: flex; padding: 3px; gap: 3px; border-radius: 7px; background: #eef2e8; }
+.option-segments label { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 39px; padding: 6px 10px; border: 1px solid transparent; border-radius: 5px; font-size: 11px; line-height: 1.5; color: #7b8a6e; cursor: pointer; text-align: center; }
+.option-segments label.active { background: #fffef8; color: #46643d; border-color: #d9e3ce; box-shadow: 0 1px 3px #43542f0a; font-weight: 650; }
+.option-segments input { margin: 0; width: 13px; height: 13px; accent-color: #597a48; flex-shrink: 0; }
+.option-segments label:focus-within { outline: 2px solid #849c72; outline-offset: 1px; }
+.option-explanation { display: flex; flex-wrap: wrap; gap: 10px 28px; padding: 0 3px 17px; }
+.option-explanation p { flex: 1 1 300px; color: #88967d; font-size: 10px; line-height: 1.8; }
+.option-explanation strong { display: block; font-weight: 600; color: #657c55; font-size: 11px; }
+.option-explanation .access-note strong { color: #5a7f89; }
+.common-space rect { fill: #e9e6db; fill-opacity: .8; }
+.common-space text { fill: #8b8069; font-weight: 500; font-variant-numeric: tabular-nums; paint-order: stroke; stroke: #f9f7ef; stroke-width: 2px; }
+.av-screen text { fill: #456b81; font-weight: 600; paint-order: stroke; stroke: #e9f2f2; stroke-width: 3px; }
+.plan-workspace { display: grid; grid-template-columns: minmax(0, 1fr) 295px; border: 1px solid #dce4d3; border-radius: 12px; background: #fffef9; overflow: hidden; }
+.drawing-column { min-width: 0; padding: 15px 10px 18px; }
+.drawing-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 14px 8px; font-size: 11px; color: #7e8f70; }
+.drawing-toolbar > div { display: flex; flex-wrap: wrap; gap: 14px; }
+.drawing-toolbar label { display: flex; align-items: center; gap: 5px; white-space: nowrap; cursor: pointer; }
+.drawing-toolbar input { margin: 0; accent-color: #658355; }
+.plan-scroll { overflow: auto; max-width: 100%; overscroll-behavior-x: contain; }
+.plan-scroll:focus-visible { outline: 2px solid #9baa85; outline-offset: -2px; }
+.drawing-canvas { width: 100%; }
+.drawing-canvas.zoomed { min-width: 950px; }
+.plan-container { width: 100%; }
+.layout-svg { display: block; max-width: 100%; }
+.room { cursor: pointer; outline: none; }
+.room > polygon { stroke: transparent; stroke-width: 2; transition: stroke 130ms; }
+.room-classroom > polygon { fill: #dfe9d8; }
+.room-flex > polygon { fill: #d5e7e8; }
+.room-reading > polygon { fill: #f2e4bd; }
+.room-office > polygon { fill: #e5dfd3; }
+.room-consult > polygon { fill: #e6dce8; }
+.room-reception > polygon { fill: #d2e3df; }
+.room:hover > polygon { stroke: #a7b39a; }
+.room:focus > polygon, .room-selected > polygon { stroke: #698c50; stroke-width: 3; }
+.furniture-table, .furnishing-table { fill: #fffef6; stroke: #b2bda8; stroke-width: 1; }
+.furniture-chair { fill: #a9bd96; stroke: #829e6f; stroke-width: .7; }
+.furnishing-counter { fill: #8aafa3; stroke: #537d70; stroke-width: 1.2; }
+.counter-front { stroke: #385f52; stroke-width: 3; stroke-linecap: round; }
+.furnishing-bench { fill: #dbcca8; stroke: #b39d72; stroke-width: 1; }
+.room-caption { fill: #3b5535; font-size: 12px; font-weight: 650; paint-order: stroke; stroke: #fffef3eb; stroke-width: 4px; stroke-linejoin: round; }
+.room-caption-small { font-size: 10px; font-weight: 450; fill: #627654; stroke-width: 3px; }
+.room-dimension-caption { font-size: 9px; font-weight: 500; fill: #6f805e; stroke-width: 3px; }
+.seam-label { font-size: 9px; fill: #896282; paint-order: stroke; stroke: #fffdf8; stroke-width: 3px; }
+.pillar-label { fill: #fff; font-size: 9px; }
+.entry-label { font-size: 10px; fill: #a77238; font-weight: 600; }
+.unit-label { font-size: 10px; fill: #879579; }
+.excluded-space { font-size: 11px; fill: #a2ae97; }
+.excluded-space text:last-child { font-size: 9px; fill: #8a9b7d; }
+.survey-dimensions path, .room-dimensions path { fill: none; stroke: #8c9c81; stroke-width: .8; }
+.survey-dimensions text, .room-dimensions text { fill: #61774f; font-size: 9px; font-variant-numeric: tabular-nums; paint-order: stroke; stroke: #fffef5e6; stroke-width: 3px; }
+.room-dimensions text { font-size: 9px; }
+.legend { display: flex; justify-content: center; flex-wrap: wrap; gap: 9px 15px; font-size: 10px; color: #6b7e5a; margin: 10px 0; }
+.legend span { display: flex; align-items: center; gap: 6px; }
+.legend i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; }
+.key-class { background: #c5d6bd; }.key-read { background: #e8ce91; }.key-av { background: #a8cdd1; }.key-office { background: #d7cfbd; }.key-desk { background: #a9c9c3; }.key-shelf { background: #b58e5b; }
+.drawing-footnote { color: #87947b; font-size: 10px; text-align: center; padding: 0 14px; line-height: 1.8; }
+.detail-column { min-width: 0; border-left: 1px solid #e5eadf; padding: 20px; background: #fafbf5; }
+.compact-summary { display: grid; grid-template-columns: 1fr 1fr; padding-bottom: 18px; border-bottom: 1px solid #e1e8d7; gap: 12px; }
+.compact-summary.has-av { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.compact-summary span { display: block; font-size: 10px; color: #8a997b; }
+.compact-summary strong { font-size: 26px; font-weight: 550; color: #536e42; }
+.compact-summary small { font-size: 11px; font-weight: 400; margin-left: 4px; }
+.section-kicker { display: block; color: #8a967c; font-size: 9px; letter-spacing: .3px; margin-bottom: 6px; }
+.room-detail { padding: 20px 0; }
+.room-detail h2 { font-size: 17px; font-weight: 600; letter-spacing: -.4px; }
+.room-detail p { font-size: 11px; line-height: 1.9; color: #7b8a6d; margin-top: 12px; }
+.detail-title { display: flex; align-items: center; justify-content: space-between; }
+.detail-title button { background: transparent; color: #829574; font-size: 20px; line-height: 1; }
+.room-area { font-size: 29px; font-weight: 500; color: #547642; margin: 10px 0; font-variant-numeric: tabular-nums; }
+.room-area > small { font-size: 12px; margin-left: 4px; }
+.room-area > span { display: block; font-size: 10px; font-weight: 400; color: #8a977d; }
+.room-detail .dimension-summary { font-size: 12px; color: #627c50; font-weight: 600; }
+.measurement-list { margin: 12px 0 0; padding: 0; }
+.measurement-list > div { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 6px 0; border-bottom: 1px solid #e8ecdf; }
+.measurement-list dt { font-size: 10px; color: #8b977f; }
+.measurement-list dd { text-align: right; margin: 0; font-size: 12px; color: #5e7851; font-variant-numeric: tabular-nums; }
+.measurement-list small { display: block; font-size: 9px; color: #91a083; }
+.education-card { background: #edf2e4; border: 1px solid #dfe7d4; border-radius: 8px; padding: 14px; }
+.education-card > div { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; margin-top: 8px; }
+.education-card > div span { font-size: 10px; color: #7b9065; }
+.education-card strong { font-size: 20px; font-weight: 550; color: #547640; font-variant-numeric: tabular-nums; }
+.education-card small { font-size: 10px; margin-left: 3px; }
+.education-card p { font-size: 10px; color: #879776; margin-top: 10px; line-height: 1.8; }
+.note-box { padding-top: 20px; }
+.note-box label { display: block; font-size: 11px; color: #627a52; font-weight: 600; margin-bottom: 8px; }
+.note-box textarea { width: 100%; resize: vertical; border: 1px solid #d7e1cb; border-radius: 6px; padding: 10px; color: #526b43; background: #fffef8; font-size: 11px; line-height: 1.8; }
+.note-box p { font-size: 9px; color: #8d9c7d; margin-top: 5px; }
+.section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 13px; }
+.section-heading h2 { font-size: 19px; font-weight: 600; letter-spacing: -.4px; }
+.section-heading > span { font-size: 10px; color: #859578; }
+.dimensions-section, .education-section { margin-top: 28px; }
+.table-scroll { overflow-x: auto; max-width: 100%; border: 1px solid #dfe6d6; border-radius: 8px; background: #fffef8; }
+table { border-collapse: collapse; width: 100%; font-size: 11px; text-align: left; }
+th, td { padding: 13px 15px; border-bottom: 1px solid #e5eadd; vertical-align: top; }
+thead th { font-size: 10px; font-weight: 500; background: #f0f4e9; color: #7b8e68; }
+tbody th { font-weight: 550; color: #5e7650; }
+tbody td { color: #809171; line-height: 1.8; }
+tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+.room-table { min-width: 690px; table-layout: fixed; }
+.room-table th:first-child { width: 15%; }
+.room-table th:nth-child(2) { width: 30%; }
+.room-table th:nth-child(3) { width: 13%; }
+.room-table th:nth-child(4) { width: 42%; }
+.room-table tbody th button { padding: 0; background: transparent; text-align: left; font-size: 11px; color: #5c7b48; }
+.room-table tbody strong { font-weight: 550; color: #647e54; }
+.room-table td > small { display: block; color: #9aa48e; }
+.room-table tr.selected { background: #f0f5e7; }
+.table-measurements { margin-top: 5px; display: flex; flex-direction: column; gap: 2px; font-size: 10px; }
+.table-measurements small { font-size: 9px; color: #99a58e; }
+.education-table { min-width: 470px; }
+.education-table td { font-variant-numeric: tabular-nums; }
+tfoot th, tfoot td { font-weight: 600; background: #f0f4e7; color: #647e50; }
+.section-note { font-size: 10px; color: #8b987f; line-height: 1.9; margin-top: 10px; }
+.assumptions-section { margin-top: 24px; border: 1px solid #dde6d2; border-radius: 8px; background: #f8faf2; }
+.assumptions-section > summary { cursor: pointer; padding: 15px 18px; color: #748a60; font-size: 12px; font-weight: 550; }
+.assumptions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; padding: 0 18px 18px; }
+.assumptions-grid > div { min-width: 0; }
+.assumptions-grid h3 { font-size: 12px; color: #697e58; font-weight: 550; margin: 5px 0 10px; }
+.assumptions-grid p, .assumptions-grid li { font-size: 10px; line-height: 1.9; color: #8b987f; }
+.assumptions-grid p { margin-top: 10px; }
+.assumptions-grid ul { padding-left: 17px; }
+.evidence-table { font-size: 10px; table-layout: fixed; }
+.evidence-table th, .evidence-table td { padding: 8px 5px; overflow-wrap: anywhere; }
+.evidence-table th:first-child { width: 30%; }
+.evidence-table th:last-child { width: 13%; }
+.evidence-table td > span { white-space: nowrap; font-size: 9px; }
+.basis-estimated { color: #ac8745; }.basis-printed { color: #748ea5; }.basis-derived { color: #907aa2; }
+.page-footer { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0 0; }
+.page-footer p { font-size: 10px; color: #94a185; }
+.share-message { font-size: 11px; color: #728e5a; margin-bottom: 10px; }
+.share-message:empty { display: none; }
+.share-manual { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 15px; font-size: 10px; color: #7b8e6b; }
+.share-manual input { min-width: 0; flex: 1 1 250px; padding: 8px; border: 1px solid #d4dfc7; border-radius: 5px; font-size: 11px; color: #60784e; background: #fffef8; }
+.layout-warning { padding: 13px 17px; font-size: 11px; line-height: 1.8; color: #9c7747; background: #f4ebda; border-radius: 7px; margin-top: 14px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 900px) { .plan-workspace { grid-template-columns: minmax(0, 1fr) 260px; }.detail-column { padding: 16px; }.education-card { padding: 11px; }.education-card strong { font-size: 17px; } }
+@media (max-width: 760px) { .plan-workspace { grid-template-columns: minmax(0, 1fr); }.detail-column { border-left: 0; border-top: 1px solid #e5eadf; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 20px; }.compact-summary { grid-column: 1 / -1; }.room-detail { padding: 0; }.note-box { padding-top: 0; }.assumptions-grid { grid-template-columns: 1fr; }.section-heading { align-items: flex-start; flex-direction: column; gap: 3px; } }
+@media (max-width: 480px) {
+  .topbar { padding: 12px 14px; min-height: 64px; gap: 7px; }.brand { font-size: 12px; gap: 7px; }.brand-mark { width: 29px; height: 29px; font-size: 24px; }.brand small { font-size: 8px; }.header-actions { gap: 5px; }.secondary-button { padding: 7px 9px; font-size: 10px; min-height: 34px; }
+  main { padding: 18px 12px; }.plan-heading { align-items: flex-start; gap: 9px; flex-direction: column; margin-bottom: 14px; }h1 { font-size: 22px; }.eyebrow { font-size: 8px; }.plan-heading p:last-child { font-size: 11px; }.model-tag { font-size: 9px; }
+  .plan-options { grid-template-columns: 1fr; gap: 14px; padding: 13px; }.option-segments label { min-height: 40px; font-size: 11px; padding-inline: 6px; }.option-explanation { gap: 7px; padding-bottom: 13px; }.option-explanation p { font-size: 9px; }.option-explanation strong { font-size: 10px; }
+  .drawing-column { padding: 12px 0 15px; }.drawing-toolbar { margin-inline: 12px; font-size: 10px; }.drawing-toolbar > div { gap: 10px; }.zoom-button { font-size: 10px; }.legend { gap: 8px 11px; font-size: 9px; padding-inline: 9px; }.drawing-footnote { font-size: 9px; }
+  .detail-column { grid-template-columns: 1fr; gap: 18px; padding: 17px; }.compact-summary { grid-column: auto; }.education-card { padding: 14px; }.education-card strong { font-size: 22px; }.education-card p { font-size: 10px; }
+  .section-heading h2 { font-size: 17px; }.section-heading > span { font-size: 9px; }.dimensions-section, .education-section { margin-top: 23px; }.section-note { font-size: 9px; }.assumptions-section > summary { padding: 13px; font-size: 11px; }.assumptions-grid { padding: 0 12px 14px; }.evidence-table { font-size: 9px; }.evidence-table th:last-child { width: 15%; }
+  .page-footer { flex-direction: column; align-items: flex-start; gap: 10px; }.page-footer .primary-button { width: 100%; }.page-footer p { font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+@media print {
+  .plan-options { display: none; }.option-explanation { padding-bottom: 10px; }.option-explanation p { font-size: 8px; }.option-explanation strong { font-size: 9px; }
+  @page { size: A4; margin: 12mm; }body { background: #fff; print-color-adjust: exact; -webkit-print-color-adjust: exact; }main { padding: 0; }.topbar, .drawing-toolbar, .share-message, .share-manual, .note-box, .page-footer, .assumptions-section { display: none; }.plan-heading { margin-bottom: 10px; }.plan-heading h1 { font-size: 20px; }.model-tag { display: none; }.plan-workspace { display: block; border: 0; }.drawing-column { padding: 0; }.detail-column { display: none; }.plan-scroll { overflow: visible; }.drawing-canvas.zoomed { min-width: 0; }.layout-svg { width: 100%; height: auto; }.table-scroll { overflow: visible; }.room-table, .education-table { min-width: 0; }.room-table { font-size: 8px; }.room-table th, .room-table td { padding: 7px; }.table-measurements { font-size: 8px; }.table-measurements small { font-size: 7px; }.dimensions-section { break-before: page; }.education-section { break-inside: avoid; }.legend, .drawing-footnote { font-size: 8px; }
+}
+
+.plan-entity { cursor: pointer; outline: none; }
+.plan-entity:focus-visible { filter: drop-shadow(0 0 3px #b76b36); }
+.entity-code { fill: #3c6158; font-size: 9px; font-weight: 750; paint-order: stroke; stroke: #fffef6; stroke-width: 3px; stroke-linejoin: round; }
+@media (max-width: 480px) { .entity-code { font-size: 7px; } }
+
+/* Open activity allocations are not partition walls or built-in furniture. */
+.hide-open-area-zones .room-open > polygon { fill: transparent; stroke: none; }
+.hide-open-area-zones .room-open:focus-visible > polygon { stroke: #698c50; stroke-width: 2; stroke-dasharray: 5 4; }
+.existing-premises-caption { fill: #627654; paint-order: stroke; stroke: #fffef3eb; stroke-width: 3px; stroke-linejoin: round; font-variant-numeric: tabular-nums; }
+.existing-premises-title, .existing-room-teaching-caption { fill: #3b5535; font-weight: 650; }
+.existing-room-front-caption { fill: #627654; }
+.existing-premises-offset path { fill: none; stroke: #8c9c81; stroke-width: .8; }
+.room.room-shared-space > polygon { stroke: none; }
+.room-shared-space.room-selected > polygon, .room-shared-space:focus-visible > polygon { stroke: #698c50; stroke-width: 1.5; stroke-dasharray: 4 4; }
+
+body { margin: 0; background: #eef1e8; }
+.cb-document { --cb-ink: #293f33; --cb-muted: #74816c; --cb-line: #dce3d3; --cb-green: #527047; box-sizing: border-box; width: min(1100px, calc(100% - 48px)); max-width: 1100px; margin: 32px auto; padding: 0 44px; background: #fffef8; color: var(--cb-ink); font: 14px/1.75 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; border: 1px solid var(--cb-line); border-radius: 9px; box-shadow: 0 6px 24px #344a3210; overflow-wrap: anywhere; }
+.cb-document *, .cb-document *::before, .cb-document *::after { box-sizing: border-box; }
+.cb-document h1, .cb-document h2, .cb-document h3, .cb-document p, .cb-document figure { margin: 0; }
+.cb-document a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.cb-document button, .cb-document a { -webkit-tap-highlight-color: transparent; }
+.cb-document a:focus-visible, .cb-document button:focus-visible, .cb-plan-scroll:focus-visible { outline: 3px solid #9cb17d; outline-offset: 4px; }
+.cb-header { padding: 34px 0 25px; }
+.cb-topline { display: flex; justify-content: space-between; gap: 12px; color: #829075; font-size: 11px; }
+.cb-topline > span { font-weight: 600; letter-spacing: .4px; }
+.cb-topline time { white-space: nowrap; }
+.cb-document h1 { margin-top: 17px; color: #314c38; font-size: clamp(27px, 3.2vw, 38px); font-weight: 650; letter-spacing: -1.2px; line-height: 1.4; }
+.cb-document .cb-introduction { max-width: 680px; margin-top: 12px; color: #708266; font-size: 13px; }
+.cb-header-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 15px; margin-top: 20px; }
+.cb-purpose { color: #9a7c49; font-size: 10px; }
+.cb-actions { display: flex; flex-wrap: wrap; gap: 7px; }
+.cb-actions button, .cb-actions a { display: inline-flex; justify-content: center; align-items: center; min-height: 38px; padding: 8px 12px; border: 1px solid #d4dfca; border-radius: 5px; background: #f4f7ed; color: #5a774b; font-family: inherit; line-height: 1.5; font-size: 11px; font-weight: 550; text-decoration: none; cursor: pointer; }
+.cb-actions button { background: #567346; color: #fffef6; border-color: #567346; }
+.cb-actions a:hover { background: #eaf0df; }
+.cb-navigation { display: flex; flex-wrap: wrap; gap: 0 23px; border-top: 1px solid var(--cb-line); border-bottom: 1px solid var(--cb-line); padding: 4px 0; color: #738566; font-size: 11px; }
+.cb-navigation a { display: inline-flex; align-items: center; min-height: 36px; text-decoration: none; }
+.cb-navigation a:hover { color: #3c5e2d; text-decoration: underline; }
+.cb-section { padding: 30px 0 32px; border-bottom: 1px solid #e4e9dc; scroll-margin-top: 20px; min-width: 0; }
+.cb-section-heading { display: flex; align-items: center; gap: 13px; margin-bottom: 19px; }
+.cb-section-number { align-self: stretch; display: flex; align-items: center; padding-right: 13px; border-right: 1px solid #dce5d1; color: #a0ae8e; font-size: 13px; font-variant-numeric: tabular-nums; }
+.cb-kicker { color: #8a997c; font-size: 10px; }
+.cb-document h2 { font-size: 22px; font-weight: 600; letter-spacing: -.7px; line-height: 1.5; }
+.cb-unit-note { margin-left: auto; align-self: flex-end; padding-bottom: 3px; color: #8a987d; font-size: 10px; white-space: nowrap; }
+.cb-document .cb-section-description { color: #74866a; margin: -3px 0 19px; font-size: 12px; }
+.cb-plan-figure { border: 1px solid #dde5d4; border-radius: 7px; background: #fcfcf6; overflow: hidden; }
+.cb-plan-scroll { width: 100%; overflow-x: auto; overscroll-behavior-x: contain; }
+.cb-plan-canvas { min-width: 640px; max-width: 850px; margin: 0 auto; padding: 12px 0 0; }
+.cb-plan-canvas .layout-svg { display: block; width: 100%; max-width: 100%; height: auto; }
+.cb-plan-canvas .plan-read-only .room, .cb-plan-canvas .plan-read-only .plan-entity { cursor: default; }
+.cb-plan-canvas .plan-read-only .room:hover > polygon { stroke: none; }
+.cb-plan-figure figcaption { padding: 12px 17px; border-top: 1px solid #e4e9dc; color: #7f8e72; font-size: 10px; }
+.cb-main-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 22px 0; }
+.cb-main-metrics > div { padding-left: 18px; border-left: 1px solid #e0e7d6; min-width: 0; }
+.cb-main-metrics > div:first-child { padding-left: 0; border: 0; }
+.cb-main-metrics span { display: block; color: #829273; font-size: 11px; }
+.cb-main-metrics strong { display: block; color: #587548; font-size: 28px; font-weight: 550; line-height: 1.65; font-variant-numeric: tabular-nums; }
+.cb-main-metrics strong > small { margin-left: 4px; color: #899d78; font-size: 11px; font-weight: 400; }
+.cb-main-metrics p { color: #91a081; font-size: 9px; }
+.cb-open-space { padding: 14px 17px; border-left: 3px solid #91a874; background: #f1f6e9; color: #728665; font-size: 11px; }
+.cb-open-space > strong { color: #5f7c4c; font-weight: 600; }
+.cb-open-space > p { margin-top: 4px; }
+.cb-document .cb-footnote { margin-top: 13px; color: #8a957e; font-size: 10px; line-height: 1.85; }
+.cb-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 11px; line-height: 1.8; }
+.cb-table th, .cb-table td { border-bottom: 1px solid #e3e8db; padding: 13px 12px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.cb-table thead th { padding-block: 10px; color: #7a8c6b; background: #f0f4e8; font-size: 10px; font-weight: 600; border-top: 1px solid #dce5d1; }
+.cb-table tbody th { width: 22%; color: #607a50; font-weight: 550; }
+.cb-table td { color: #7e8c73; }
+.cb-table small { display: block; color: #95a187; font-size: 9px; }
+.cb-table .cb-numeric { color: #5c774c; font-size: 13px; font-variant-numeric: tabular-nums; }
+.cb-room-table th:nth-child(1) { width: 18%; }
+.cb-room-table th:nth-child(2) { width: 29%; }
+.cb-room-table th:nth-child(3) { width: 15%; }
+.cb-room-table th:nth-child(4) { width: 38%; }
+.cb-door-table th:nth-child(1) { width: 25%; }
+.cb-door-table th:nth-child(2) { width: 16%; }
+.cb-door-table th:nth-child(3) { width: 59%; }
+.cb-wall-table th:nth-child(1) { width: 23%; }
+.cb-wall-table th:nth-child(2) { width: 15%; }
+.cb-wall-table th:nth-child(3) { width: 18%; }
+.cb-wall-table th:nth-child(4) { width: 44%; }
+.cb-code { display: block; width: fit-content; margin-bottom: 4px; padding: 0 5px; background: #edf2e5; color: #8c9c79; border-radius: 3px; font-size: 9px; font-weight: 500; }
+.cb-table .cb-room-tag { margin-top: 6px; color: #9a8b64; }
+.cb-measurements { margin: 0; font-size: 10px; }
+.cb-measurements > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 9px; padding-bottom: 4px; }
+.cb-measurements > div:last-child { padding-bottom: 0; }
+.cb-measurements dt { color: #86957b; }
+.cb-measurements dd { margin: 0; color: #69825b; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.cb-table .cb-area-cell > strong { color: #678157; font-weight: 550; white-space: nowrap; }
+.cb-table .cb-dimension-summary { color: #698159; margin-bottom: 7px; }
+.cb-scope-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.cb-scope-item { border: 1px solid #e0e7d5; border-radius: 6px; padding: 17px; min-width: 0; }
+.cb-scope-status { display: inline-block; color: #7a9463; background: #edf3e3; padding: 2px 7px; border-radius: 4px; font-size: 9px; }
+.cb-scope-status.cb-status-omitted { color: #8f8b7c; background: #f0efe9; }
+.cb-scope-status.cb-status-review { color: #a38c5a; background: #f5efdf; }
+.cb-scope-item h3 { margin-top: 8px; font-size: 14px; font-weight: 550; color: #60794f; }
+.cb-scope-item p { margin-top: 5px; color: #8b987f; font-size: 11px; }
+.cb-document .cb-table-title { margin: 24px 0 9px; color: #71865f; font-size: 14px; font-weight: 600; }
+.cb-counter-layout { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 26px; align-items: start; margin-top: 23px; }
+.cb-counter-area { padding: 17px; border: 1px solid #dce6d0; border-radius: 6px; background: #f3f7ec; }
+.cb-counter-area > span { color: #889b76; font-size: 10px; }
+.cb-counter-area > strong { display: block; color: #5f7e4c; font-size: 29px; font-weight: 550; font-variant-numeric: tabular-nums; }
+.cb-counter-area > strong > small { margin-left: 4px; color: #8e9f7e; font-size: 11px; font-weight: 400; }
+.cb-counter-area > p { color: #92a181; font-size: 10px; margin-top: 6px; }
+.cb-counter-measurements { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 23px; margin: 0; }
+.cb-counter-measurements > div { min-width: 0; border-bottom: 1px solid #e5eadc; padding: 0 0 9px; }
+.cb-counter-measurements dt { color: #89977e; font-size: 10px; }
+.cb-counter-measurements dd { margin: 2px 0 0; color: #648052; font-size: 16px; font-variant-numeric: tabular-nums; }
+.cb-counter-measurements dd small { margin-left: 4px; color: #9aa88c; font-size: 9px; }
+.cb-evidence-table th:first-child { width: 31%; }
+.cb-evidence-table th:nth-child(2) { width: 49%; }
+.cb-evidence-table th:nth-child(3) { width: 20%; }
+.cb-basis { display: inline-block; padding: 1px 6px; background: #edf3e5; color: #7c9368; border-radius: 3px; font-size: 9px; }
+.cb-basis-estimated { color: #a08b5d; background: #f5efdf; }
+.cb-questions { list-style: none; padding: 0; margin: 0; counter-reset: cb-question; }
+.cb-questions li { counter-increment: cb-question; display: flex; align-items: baseline; gap: 13px; padding: 13px 0; color: #7f8f72; border-bottom: 1px solid #e6ebdf; font-size: 12px; }
+.cb-questions li:last-child { border-bottom: 0; padding-bottom: 0; }
+.cb-questions li::before { content: counter(cb-question, decimal-leading-zero); color: #a4b193; font-size: 10px; font-variant-numeric: tabular-nums; flex: 0 0 20px; }
+.cb-reference-tag { margin-left: auto; color: #a18b58; background: #f5efdf; padding: 3px 8px; border-radius: 4px; font-size: 9px; white-space: nowrap; }
+.cb-existing-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 28px; align-items: start; }
+.cb-existing-figure { padding: 10px; border: 1px solid #e0e6d8; border-radius: 6px; background: #fafbf5; }
+.cb-existing-svg { display: block; width: 100%; max-height: 360px; }
+.cb-existing-figure figcaption { border-top: 1px solid #e2e9d8; padding: 9px 2px 0; font-size: 9px; color: #91a080; }
+.cb-existing-details { min-width: 0; }
+.cb-existing-facts { margin: 0 0 18px; }
+.cb-existing-facts > div { padding: 9px 0; border-bottom: 1px solid #e4eadb; }
+.cb-existing-facts > div:first-child { padding-top: 0; }
+.cb-existing-facts dt { color: #91a080; font-size: 10px; }
+.cb-existing-facts dd { margin: 3px 0 0; color: #6d845a; font-size: 12px; }
+.cb-existing-facts dd strong { font-size: 21px; font-weight: 550; font-variant-numeric: tabular-nums; }
+.cb-existing-facts dd small { display: block; color: #9aa68c; font-size: 9px; }
+.cb-footer { padding: 24px 0 29px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 20px; color: #9aa68c; font-size: 10px; }
+.cb-footer > strong { color: #7f9470; font-size: 11px; font-weight: 550; }
+.cb-footer > span { margin-left: auto; }
+.cb-footer > p { flex-basis: 100%; margin-top: 4px; font-size: 9px; }
+
+@media (max-width: 760px) {
+  .cb-document { width: calc(100% - 24px); margin-block: 12px; padding-inline: 22px; }
+  .cb-header { padding-top: 25px; }
+  .cb-document h1 { font-size: 29px; letter-spacing: -.8px; }
+  .cb-topline { flex-wrap: wrap; gap: 4px; font-size: 10px; }
+  .cb-actions button, .cb-actions a { min-height: 41px; }
+  .cb-navigation { gap: 0 19px; font-size: 10px; }
+  .cb-section { padding-block: 25px; }
+  .cb-document h2 { font-size: 20px; }
+  .cb-main-metrics { gap: 11px; }
+  .cb-main-metrics > div { padding-left: 11px; }
+  .cb-main-metrics strong { font-size: 23px; }
+  .cb-main-metrics span { font-size: 10px; }
+  .cb-main-metrics p { font-size: 8px; }
+  .cb-counter-layout { grid-template-columns: 170px minmax(0, 1fr); gap: 18px; }
+  .cb-counter-measurements { grid-template-columns: minmax(0, 1fr); }
+  .cb-existing-layout { grid-template-columns: 170px minmax(0, 1fr); gap: 18px; }
+}
+@media (max-width: 620px) {
+  .cb-document { padding-inline: 17px; font-size: 12px; }
+  .cb-document h1 { font-size: 27px; }
+  .cb-document .cb-introduction { font-size: 11px; }
+  .cb-header-bottom { margin-top: 16px; }
+  .cb-purpose { font-size: 9px; }
+  .cb-actions { width: 100%; gap: 5px; }
+  .cb-actions button, .cb-actions a { flex: 1 1 auto; padding-inline: 9px; font-size: 10px; }
+  .cb-section-heading { gap: 9px; flex-wrap: wrap; }
+  .cb-section-number { padding-right: 9px; font-size: 12px; }
+  .cb-document h2 { font-size: 19px; }
+  .cb-unit-note { margin-left: 0; flex-basis: 100%; padding-left: 31px; font-size: 9px; }
+  .cb-kicker { font-size: 9px; }
+  .cb-main-metrics { gap: 8px; }
+  .cb-main-metrics > div { padding-left: 8px; }
+  .cb-main-metrics strong { font-size: 21px; }
+  .cb-main-metrics strong small { display: block; margin: -3px 0 4px; font-size: 9px; }
+  .cb-main-metrics span { font-size: 9px; }
+  .cb-open-space { padding: 12px; font-size: 10px; }
+  .cb-plan-figure figcaption { padding: 10px 12px; font-size: 9px; }
+  .cb-table, .cb-table tbody, .cb-table tr, .cb-table th, .cb-table td { display: block; width: 100%; }
+  .cb-table thead { display: none; }
+  .cb-table tr { padding: 14px 0; border-bottom: 1px solid #e1e7d7; }
+  .cb-table tr:first-child { border-top: 1px solid #dce5d1; }
+  .cb-table th, .cb-table td, .cb-table tbody th { border: 0; padding: 5px 0; width: 100%; }
+  .cb-table tbody th:first-child { width: 100%; }
+  .cb-table tbody th { padding-bottom: 10px; font-size: 13px; }
+  .cb-table td::before { content: attr(data-label); display: block; color: #9aa78c; font-size: 9px; font-weight: 400; margin-bottom: 3px; }
+  .cb-table td { font-size: 11px; }
+  .cb-table .cb-area-cell > small { display: inline; margin-left: 10px; }
+  .cb-code { display: inline-block; margin: 0 7px 0 0; vertical-align: 1px; }
+  .cb-table .cb-room-tag { display: block; margin-top: 3px; font-size: 9px; }
+  .cb-measurements { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 18px; }
+  .cb-measurements > div { gap: 8px; padding: 2px 0; }
+  .cb-scope-grid { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .cb-scope-item { padding: 15px; }
+  .cb-scope-item h3 { font-size: 13px; }
+  .cb-scope-item p { font-size: 10px; }
+  .cb-counter-layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .cb-counter-area { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 2px 12px; }
+  .cb-counter-area > strong { font-size: 25px; }
+  .cb-counter-area > p { grid-column: 1 / -1; margin-top: 0; }
+  .cb-counter-measurements { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 17px; }
+  .cb-counter-measurements dt { font-size: 9px; }
+  .cb-questions li { font-size: 11px; gap: 9px; }
+  .cb-existing-layout { grid-template-columns: minmax(0, 1fr); }
+  .cb-existing-figure { max-width: 240px; width: 100%; margin-inline: auto !important; }
+  .cb-existing-svg { max-height: 330px; }
+  .cb-reference-tag { margin-left: 31px; font-size: 8px; }
+  .cb-footer { font-size: 9px; }
+  .cb-footer > strong { font-size: 10px; }
+  .cb-footer > span { margin-left: 0; }
+}
+@media print {
+  @page { size: A4; margin: 13mm; }
+  body { background: #fff; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .cb-document { display: block; width: 100%; max-width: none; margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; font-size: 9pt; }
+  .cb-header { padding: 0 0 12px; }
+  .cb-topline { font-size: 8pt; }
+  .cb-document h1 { font-size: 23pt; margin-top: 9px; }
+  .cb-document .cb-introduction { margin-top: 7px; font-size: 9pt; }
+  .cb-header-bottom { margin-top: 8px; }
+  .cb-actions, .cb-navigation { display: none; }
+  .cb-purpose { font-size: 7.5pt; }
+  .cb-section { padding: 16px 0 19px; scroll-margin: 0; }
+  .cb-section-heading { margin-bottom: 11px; break-after: avoid; }
+  .cb-document h2 { font-size: 14pt; }
+  .cb-kicker, .cb-unit-note { font-size: 7.5pt; }
+  .cb-plan-figure { break-inside: avoid; border-radius: 0; }
+  .cb-plan-scroll { overflow: visible; }
+  .cb-plan-canvas { min-width: 0; max-width: 100%; padding-top: 0; }
+  .cb-plan-canvas .layout-svg { width: 100%; height: auto; max-height: 180mm; }
+  .cb-plan-figure figcaption { padding: 7px 9px; font-size: 7pt; }
+  .cb-main-metrics { gap: 12px; margin: 13px 0; break-inside: avoid; }
+  .cb-main-metrics strong { font-size: 19pt; }
+  .cb-open-space { padding: 9px 12px; font-size: 8pt; break-inside: avoid; }
+  .cb-document .cb-footnote { font-size: 7.5pt; margin-top: 9px; }
+  .cb-table { display: table; font-size: 8pt; }
+  .cb-table thead { display: table-header-group; }
+  .cb-table tbody { display: table-row-group; }
+  .cb-table tr { display: table-row; break-inside: avoid; }
+  .cb-table th, .cb-table td, .cb-table tbody th { display: table-cell; padding: 8px; border-bottom: 1px solid #e3e8db; font-size: 8pt; }
+  .cb-table tbody th:first-child { width: auto; }
+  .cb-table td::before { display: none; }
+  .cb-table thead th { font-size: 7.5pt; }
+  .cb-measurements { display: block; font-size: 7.5pt; }
+  .cb-table th { width: auto; }
+  .cb-room-table th:nth-child(1) { width: 18%; }
+  .cb-room-table th:nth-child(2) { width: 29%; }
+  .cb-room-table th:nth-child(3) { width: 15%; }
+  .cb-room-table th:nth-child(4) { width: 38%; }
+  .cb-code { font-size: 7pt; }
+  .cb-scope-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .cb-scope-item { padding: 11px; break-inside: avoid; }
+  .cb-scope-item h3 { font-size: 10pt; }
+  .cb-scope-item p { font-size: 8pt; }
+  .cb-table-title { break-after: avoid; }
+  .cb-counter-layout { grid-template-columns: 160px minmax(0, 1fr); gap: 20px; break-inside: avoid; }
+  .cb-counter-measurements { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cb-questions li { font-size: 8.5pt; padding-block: 9px; break-inside: avoid; }
+  .cb-existing-layout { grid-template-columns: 160px minmax(0, 1fr); gap: 22px; }
+  .cb-existing-figure { max-width: none; break-inside: avoid; }
+  .cb-existing-svg { max-height: 105mm; }
+  .cb-existing-facts > div { break-inside: avoid; }
+  .cb-footer { padding-bottom: 0; font-size: 7.5pt; }
+  .cb-footer > strong { font-size: 8pt; }
+}
+</style><title id="_R_53_-title">기둥 뒤쪽 선, 열린 도서관과 시청각 활동 평면도</title><desc id="_R_53_-desc">일반 교실 두 곳과 원장실을 유지하고, B161의 앞 도서관과 뒤 시청각 활동 영역을 칸막이 없이 하나의 공간으로 사용합니다. 도면 안의 치수는 각 공간의 배치 치수이며 면적은 기둥을 제외합니다. 독서 구역과 시청각 수업 구역은 벽 없이 연결된 하나의 수업 공간 안의 활동 구역입니다. 실별 치수표와 함께 검토하세요.</desc><defs><pattern id="_R_53_-grid" width="50.72" height="50.72" patternUnits="userSpaceOnUse" x="48" y="88"><path d="M 50.72 0 H 0 V 50.72" fill="none" stroke="#dce2dc" stroke-width="0.6"></path></pattern><pattern id="_R_53_-pillar" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#6b726d"></rect><path d="M0 6L6 0" stroke="#aeb5af" stroke-width="1"></path></pattern><pattern id="_R_53_-books" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#b58e5b"></rect><path d="M2 0V6" stroke="#f0dcc0" stroke-width="1.2"></path></pattern><marker id="_R_53_-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#bd7933"></path></marker><marker id="_R_53_-public-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2d8b77"></path></marker></defs><polygon points="205.232,88 682,88 682,412.608 276.24,412.608 276.24,691.568 48,691.568 48,245.232" fill="#f7f7f1"></polygon><polygon points="205.232,88 682,88 682,412.608 276.24,412.608 276.24,691.568 48,691.568 48,245.232" fill="url(#_R_53_-grid)"></polygon><g aria-label="일반 교실 1, 폭 3.950 × 깊이 4.450m · 직사각형, 17.58제곱미터, 5.32평" class="room room-classroom"><polygon points="276.24,186.904 476.584,186.904 476.584,412.608 276.24,412.608"></polygon><title>일반 교실 1, 5.32평, 기둥 뒤쪽 면 y=1.900m에 교실 앞벽을 맞춘 직사각형입니다. 내부 폭 3.950m × 깊이 4.450m, 면적 17.5775m²(약 5.32평)입니다. 중앙 칸막이는 x=8.500m이며 원장실과 기둥은 교실 바깥에 있습니다. 앞벽과 중앙 칸막이의 실내 쪽 50mm 여유를 반영했습니다. 칠판은 도면 아래쪽 벽에 두고 책상·의자는 아래쪽을 바라봅니다. 그려진 책상 6개는 배치 예시이며 사용자 1평/명 가정의 정수 인원은 5명입니다. 법적 정원은 별도로 확인해야 합니다.</title></g><g aria-label="일반 교실 2, 폭 3.950 × 깊이 4.450m · 직사각형, 17.58제곱미터, 5.32평" class="room room-classroom"><polygon points="481.656,186.904 682,186.904 682,412.608 481.656,412.608"></polygon><title>일반 교실 2, 5.32평, 기둥 뒤쪽 면 y=1.900m에 교실 앞벽을 맞춘 직사각형입니다. 내부 폭 3.950m × 깊이 4.450m, 면적 17.5775m²(약 5.32평)입니다. 중앙 칸막이는 x=8.500m이며 원장실과 기둥은 교실 바깥에 있습니다. 앞벽과 중앙 칸막이의 실내 쪽 50mm 여유를 반영했습니다. 칠판은 도면 아래쪽 벽에 두고 책상·의자는 아래쪽을 바라봅니다. 그려진 책상 6개는 배치 예시이며 사용자 1평/명 가정의 정수 인원은 5명입니다. 법적 정원은 별도로 확인해야 합니다.</title></g><g aria-label="원장실·창고, 폭 2.600 × 깊이 1.900m − 기둥 0.800 × 0.800m, 4.30제곱미터, 1.30평" class="room room-office"><polygon points="550.1279999999999,88 682,88 682,184.368 550.1279999999999,184.368"></polygon><title>원장실·창고, 1.30평, 왼쪽 벽은 기둥 왼선 x=9.90m, 아래 벽은 기둥 뒷선 y=1.90m에 맞춥니다. 기둥 0.64m²를 뺀 4.30m²(약 1.30평)이며 작은 원장 업무 공간 또는 창고 중 한 용도로 선택합니다. 독립 상담실은 별도로 두지 않습니다.</title></g><g aria-label="안내·대출 데스크, 기둥 모서리 맞춤, 사선 창선과 평행, 전면 약 1.800m, 최대 직교 깊이 약 0.600m, 3.64제곱미터, 1.10평" class="room room-reception room-open"><polygon points="113.936,179.296 212.84,179.296 217.912,197.048 217.912,230.016 139.296,255.376 48,247.768 48,245.232"></polygon><title>안내·대출 데스크, 1.10평, 카운터 우상단은 B161 기둥 오른쪽 끝선 x=2.900m와 뒷선 y=1.800m가 만나는 모서리 (2900,1800)에 정확히 맞춥니다. 카운터 전체는 x=2.900m 오른쪽으로 돌출되지 않고 y=1.800m 아래쪽에 놓입니다. 사선 전면은 모델의 사선 창선 x+y=3100과 정확히 평행합니다. 수평 상단 848mm 중 800mm가 기둥 하단 전체와 맞닿는 비직사각형 4각 상판입니다. 정수 mm 좌표에서 전면의 실제 길이는 1273√2mm인 약 1800.294mm이고 최대 직교 깊이는 424√2mm인 약 599.627mm입니다. 약 1.800m와 약 0.600m 표시는 반올림값이며 실제 가구 바닥은 0.899728m²입니다. 창의 사선 방향과 기둥 치수는 기존 모델 가정으로 현장 실측 확정값이 아닙니다. 안내 구역 3.640m²에는 가구와 북서쪽 직원, 남동쪽 응대 개념 영역을 함께 배분합니다. 직원은 남서쪽 끝의 측면으로 접근하는 개념이며 직원측 전체 길이에 통과 폭을 확보했다고 보지 않습니다. 카운터 오른쪽 최소 수평 도형 간격은 1.600m이며 앞 독서 테이블과의 세로 간격은 927mm입니다. 직원 접근, 의자 인출과 상담 대기에 필요한 실제 유효 폭은 미확인입니다. 색 경계는 칸막이가 아닙니다.</title></g><g aria-label="독서 구역, 같은 열린 수업 공간 안의 활동 구역, 활동 영역 외접 4.500 × 4.700m − 사선 0.125m² − 안내 구역 잘림 1.6975m², 19.33제곱미터, 5.85평" class="room room-reading room-open room-shared-space" data-shared-space-id="library-audiovisual"><polygon points="217.912,219.872 276.24,219.872 276.24,458.25600000000003 48,458.25600000000003 48,247.768 139.296,255.376 217.912,230.016"></polygon><title>독서 구역, 5.85평, 독서, 책 대출과 수업을 계획한 앞쪽 활동 영역입니다. 외접 4.500×4.700m에서 기존 사선 삼각형 0.125m²와 안내 구역 잘림 1.6975m²를 뺀 면적은 19.3275m²입니다. 양 측면 서가 바닥 2.250m²를 차감하면 17.0775m²입니다. 뒤 시청각 활동 영역과의 y=7.300m 경계에는 벽이나 문이 없으며 두 영역을 합친 40.0275m²가 하나의 열린 공간입니다. 뒤쪽으로 이동하는 동선과 영상 음성, 독서와 수업 소리가 공유되므로 시간표와 동시 사용 방식을 함께 정합니다. 이 활동 영역을 독립된 교실이나 별도 인허가 인정 면적으로 확정하지 않습니다.</title></g><g aria-label="시청각 수업 구역, 같은 열린 수업 공간 안의 활동 구역, 열린 활동 영역 폭 4.500 × 깊이 4.600m, 20.70제곱미터, 6.26평" class="room room-flex room-open room-shared-space" data-shared-space-id="library-audiovisual"><polygon points="48,458.25600000000003 276.24,458.25600000000003 276.24,691.568 48,691.568"></polygon><title>시청각 수업 구역, 6.26평, 앞 도서관과 이어진 열린 시청각 활동 영역입니다. y=7.300~11.900m의 폭 4.500m, 깊이 4.600m를 구분한 계획 면적은 20.700m²이며 앞쪽 경계에는 칸막이와 문을 설치하지 않습니다. 좌우 벽면의 책상 각 3개, 안쪽 의자와 아래쪽 2.400m 스크린은 유지합니다. 영역선은 활동과 면적을 구분하는 선이며 앞 도서관과 별개의 닫힌 방이 아닙니다. 영상 음성과 독서 소리가 공유되므로 시간표, 이동과 동시 사용 방식을 함께 검토합니다. 실제 통과 폭과 시청 환경, 교습 공간 인정 여부는 별도 확인이 필요하며 6개 책상 그림은 법적 정원을 뜻하지 않습니다.</title></g><g pointer-events="none"><g><g data-facing="south"><polygon class="furniture-table" points="296.528,246.5 326.96,246.5 326.96,269.324 296.528,269.324"></polygon><circle class="furniture-chair" cx="311.744" cy="236.6096" r="8.1152"></circle></g><g data-facing="south"><polygon class="furniture-table" points="359.928,246.5 390.36,246.5 390.36,269.324 359.928,269.324"></polygon><circle class="furniture-chair" cx="375.144" cy="236.6096" r="8.1152"></circle></g><g data-facing="south"><polygon class="furniture-table" points="423.32800000000003,246.5 453.76,246.5 453.76,269.324 423.32800000000003,269.324"></polygon><circle class="furniture-chair" cx="438.544" cy="236.6096" r="8.1152"></circle></g><g data-facing="south"><polygon class="furniture-table" points="296.528,304.828 326.96,304.828 326.96,327.65200000000004 296.528,327.65200000000004"></polygon><circle class="furniture-chair" cx="311.744" cy="294.9376" r="8.1152"></circle></g><g data-facing="south"><polygon class="furniture-table" points="359.928,304.828 390.36,304.828 390.36,327.65200000000004 359.928,327.65200000000004"></polygon><circle class="furniture-chair" cx="375.144" cy="294.9376" r="8.1152"></circle></g><g data-facing="south"><polygon class="furniture-table" points="423.32800000000003,304.828 453.76,304.828 453.76,327.65200000000004 423.32800000000003,327.65200000000004"></polygon><circle class="furniture-chair" cx="438.544" cy="294.9376" r="8.1152"></circle></g><g class="classroom-board"><line x1="316.81600000000003" y1="407.536" x2="433.47200000000004" y2="407.536" stroke="#3f6153" stroke-width="5.072"></line><text x="375.144" y="400.536" text-anchor="middle" style="font-size:10px">칠판</text></g></g><g><g data-facing="south"><polygon class="furniture-table" points="501.944,246.5 532.376,246.5 532.376,269.324 501.944,269.324"></polygon><circle class="furniture-chair" cx="517.1600000000001" cy="236.6096" r="8.1152"></circle></g><g data-facing="south"><polygon class="furniture-table" points="565.344,246.5 595.7760000000001,246.5 595.7760000000001,269.324 565.344,269.324"></polygon><circle class="furniture-chair" cx="580.5600000000001" cy="236.6096" r="8.1152"></circle></g><g data-facing="south"><polygon class="furniture-table" points="628.744,246.5 659.176,246.5 659.176,269.324 628.744,269.324"></polygon><circle class="furniture-chair" cx="643.96" cy="236.6096" r="8.1152"></circle></g><g data-facing="south"><polygon class="furniture-table" points="501.944,304.828 532.376,304.828 532.376,327.65200000000004 501.944,327.65200000000004"></polygon><circle class="furniture-chair" cx="517.1600000000001" cy="294.9376" r="8.1152"></circle></g><g data-facing="south"><polygon class="furniture-table" points="565.344,304.828 595.7760000000001,304.828 595.7760000000001,327.65200000000004 565.344,327.65200000000004"></polygon><circle class="furniture-chair" cx="580.5600000000001" cy="294.9376" r="8.1152"></circle></g><g data-facing="south"><polygon class="furniture-table" points="628.744,304.828 659.176,304.828 659.176,327.65200000000004 628.744,327.65200000000004"></polygon><circle class="furniture-chair" cx="643.96" cy="294.9376" r="8.1152"></circle></g><g class="classroom-board"><line x1="522.232" y1="407.536" x2="638.888" y2="407.536" stroke="#3f6153" stroke-width="5.072"></line><text x="580.5600000000001" y="400.536" text-anchor="middle" style="font-size:10px">칠판</text></g></g><g></g><g></g><g></g><g><g data-facing="west"><polygon class="furniture-table" points="48,508.976 70.824,508.976 70.824,539.408 48,539.408"></polygon><circle class="furniture-chair" cx="80.7144" cy="524.192" r="8.1152"></circle></g><g data-facing="west"><polygon class="furniture-table" points="48,564.768 70.824,564.768 70.824,595.2 48,595.2"></polygon><circle class="furniture-chair" cx="80.7144" cy="579.984" r="8.1152"></circle></g><g data-facing="west"><polygon class="furniture-table" points="48,620.5600000000001 70.824,620.5600000000001 70.824,650.992 48,650.992"></polygon><circle class="furniture-chair" cx="80.7144" cy="635.7760000000001" r="8.1152"></circle></g><g data-facing="east"><polygon class="furniture-table" points="253.416,508.976 276.24,508.976 276.24,539.408 253.416,539.408"></polygon><circle class="furniture-chair" cx="243.5256" cy="524.192" r="8.1152"></circle></g><g data-facing="east"><polygon class="furniture-table" points="253.416,564.768 276.24,564.768 276.24,595.2 253.416,595.2"></polygon><circle class="furniture-chair" cx="243.5256" cy="579.984" r="8.1152"></circle></g><g data-facing="east"><polygon class="furniture-table" points="253.416,620.5600000000001 276.24,620.5600000000001 276.24,650.992 253.416,650.992"></polygon><circle class="furniture-chair" cx="243.5256" cy="635.7760000000001" r="8.1152"></circle></g><g class="av-screen"><line x1="80.968" y1="686.496" x2="202.696" y2="686.496" stroke="#456b81" stroke-width="8.1152"></line><text x="141.832" y="679.496" text-anchor="middle" style="font-size:10px">스크린</text></g></g><g data-furnishing-id="loan-counter"><polygon class="furnishing-counter" points="109.01616,222.35728 152.07744,179.296 195.088,179.296 130.52143999999998,243.86256"></polygon><line class="counter-front" x1="195.088" y1="179.296" x2="130.52143999999998" y2="243.86256"></line></g><g data-furnishing-id="office-desk"><polygon class="furnishing-table" points="610.992,105.752 669.32,105.752 669.32,138.72 610.992,138.72"></polygon></g><g data-furnishing-id="library-table-front"><polygon class="furnishing-table" points="121.544,290.88 197.624,290.88 197.624,326.384 121.544,326.384"></polygon></g><g data-furnishing-id="library-table-middle"><polygon class="furnishing-table" points="121.544,374.568 197.624,374.568 197.624,410.072 121.544,410.072"></polygon></g></g><g class="shelves" pointer-events="none"><g><polygon points="55.608000000000004,260.448 70.824,260.448 70.824,450.648 55.608000000000004,450.648" fill="url(#_R_53_-books)" stroke="#947145" stroke-width="1"></polygon><title>레벨별 대출 서가, 1열 3.8m, 앞쪽 영어도서관형 교실 안에 둔 깊이 300mm·길이 3.750m 서가입니다. 길이는 한 줄 전면 길이이며 선반 단수나 장서 권수가 아닙니다.</title></g><g><polygon points="255.952,257.91200000000003 271.168,257.91200000000003 271.168,448.112 255.952,448.112" fill="url(#_R_53_-books)" stroke="#947145" stroke-width="1"></polygon><title>시리즈·추천도서, 1열 3.8m, 앞쪽 영어도서관형 교실 안에 둔 깊이 300mm·길이 3.750m 서가입니다. 길이는 한 줄 전면 길이이며 선반 단수나 장서 권수가 아닙니다.</title></g></g><g class="new-walls" pointer-events="none"><line x1="276.24" y1="184.368" x2="276.24" y2="412.608" stroke="#899085" stroke-width="5.072"></line><line x1="276.24" y1="184.368" x2="550.1279999999999" y2="184.368" stroke="#52645a" stroke-width="5.072"></line><line x1="479.12" y1="184.368" x2="479.12" y2="412.608" stroke="#52645a" stroke-width="5.072"></line><line x1="550.1279999999999" y1="88" x2="550.1279999999999" y2="184.368" stroke="#52645a" stroke-width="5.072"></line><line x1="550.1279999999999" y1="184.368" x2="682" y2="184.368" stroke="#52645a" stroke-width="5.072"></line><g><line x1="403.04" y1="184.368" x2="448.688" y2="184.368" stroke="#fffdf6" stroke-width="9.1296"></line><line x1="403.04" y1="184.368" x2="448.688" y2="184.368" stroke="#bd7933" stroke-width="1.5"></line></g><g><line x1="494.336" y1="184.368" x2="539.984" y2="184.368" stroke="#fffdf6" stroke-width="9.1296"></line><line x1="494.336" y1="184.368" x2="539.984" y2="184.368" stroke="#bd7933" stroke-width="1.5"></line></g><g><line x1="550.1279999999999" y1="95.608" x2="550.1279999999999" y2="141.256" stroke="#fffdf6" stroke-width="9.1296"></line><line x1="550.1279999999999" y1="95.608" x2="550.1279999999999" y2="141.256" stroke="#bd7933" stroke-width="1.5"></line></g></g><polygon points="205.232,88 682,88 682,412.608 276.24,412.608 276.24,691.568 48,691.568 48,245.232" fill="none" stroke="#334f40" stroke-width="2.5" pointer-events="none"></polygon><g pointer-events="none"><line x1="205.232" y1="88" x2="48" y2="245.232" stroke="#f7f7f1" stroke-width="4"></line><line x1="205.232" y1="88" x2="48" y2="245.232" stroke="#a47748" stroke-width="2" stroke-dasharray="5 4"></line></g><g data-column-id="b160-column" pointer-events="none"><rect x="550.1279999999999" y="143.792" width="40.576" height="40.576" fill="url(#_R_53_-pillar)" stroke="#555e57"></rect><text x="570.416" y="168.07999999999998" class="pillar-label" text-anchor="middle">기둥</text><title>B160 기둥, 0.80 × 0.80m</title></g><g data-column-id="b161-column" pointer-events="none"><rect x="154.512" y="138.72" width="40.576" height="40.576" fill="url(#_R_53_-pillar)" stroke="#555e57"></rect><text x="174.8" y="163.00799999999998" class="pillar-label" text-anchor="middle">기둥</text><title>B161 기둥, 0.80 × 0.80m</title></g><line x1="494.336" y1="88" x2="545.056" y2="88" stroke="#f7f7f1" stroke-width="6"></line><line x1="494.336" y1="88" x2="545.056" y2="88" stroke="#bd7933" stroke-width="3"></line><text x="519.696" y="73" text-anchor="middle" class="entry-label">↓ 기존 입구 · B160</text><text x="119.008" y="24" text-anchor="middle" class="unit-label">B161</text><text x="616.064" y="24" text-anchor="middle" class="unit-label">B160</text><g class="survey-dimensions" pointer-events="none"><path d="M276.24 43v9 M276.24 48H682 M682 43v9"></path><text x="479.12" y="43" text-anchor="middle">8.00m</text><path d="M692 88h10 M697 88V412.608 M692 412.608h10"></path><text transform="translate(711 250.304) rotate(-90)" text-anchor="middle">6.40m</text><path d="M28 88h10 M33 88V691.568 M28 691.568h10"></path><text transform="translate(26 389.784) rotate(-90)" text-anchor="middle">11.90m · 합산</text><path d="M48 703.568v10 M48 708.568H276.24 M276.24 703.568v10"></path><text x="162.12" y="723.568" text-anchor="middle">4.50m</text></g><g class="room-dimensions" pointer-events="none"><g><path d="M276.24 422.608v8 M276.24 426.608H476.584 M476.584 422.608v8"></path><text x="376.41200000000003" y="439.608" text-anchor="middle" style="font-size:9px">3.950m</text><path d="M284.24 186.904h8 M288.24 186.904V412.608 M284.24 412.608h8"></path><text transform="translate(299.24 299.756) rotate(-90)" text-anchor="middle">4.450m</text></g><g><path d="M481.656 422.608v8 M481.656 426.608H682 M682 422.608v8"></path><text x="581.828" y="439.608" text-anchor="middle" style="font-size:9px">3.950m</text><path d="M489.656 186.904h8 M493.656 186.904V412.608 M489.656 412.608h8"></path><text transform="translate(504.656 299.756) rotate(-90)" text-anchor="middle">4.450m</text></g></g><g pointer-events="none" class="room-caption"><text x="376.41200000000003" y="340.536" text-anchor="middle" style="font-size:16px">일반 교실 1</text><text x="376.41200000000003" y="359.536" text-anchor="middle" class="room-caption-small" style="font-size:14px">17.58m² · 5.32평</text><text x="376.41200000000003" y="378.536" text-anchor="middle" class="room-dimension-caption" style="font-size:11px">3.950×4.450m</text></g><g pointer-events="none" class="room-caption"><text x="581.828" y="340.536" text-anchor="middle" style="font-size:16px">일반 교실 2</text><text x="581.828" y="359.536" text-anchor="middle" class="room-caption-small" style="font-size:14px">17.58m² · 5.32평</text><text x="581.828" y="378.536" text-anchor="middle" class="room-dimension-caption" style="font-size:11px">3.950×4.450m</text></g><g pointer-events="none" class="room-caption"><text x="636.352" y="137.368" text-anchor="middle" style="font-size:12px">원장실·창고</text><text x="636.352" y="151.368" text-anchor="middle" class="room-caption-small" style="font-size:10px">4.30m² · 1.30평</text><text x="636.352" y="165.368" text-anchor="middle" class="room-dimension-caption" style="font-size:9px">2.600×1.900m</text><text x="636.352" y="179.368" text-anchor="middle" class="room-dimension-caption" style="font-size:9px">− 기둥 0.800×0.800m</text></g><g pointer-events="none" class="room-caption"><path d="M98.72 153.936L146.67576 206.20296000000002" fill="none" stroke="#91a28c" stroke-width="1"></path><text x="58.144" y="123.50399999999999" style="font-size:11px">대출 데스크</text><text x="58.144" y="142.504" class="room-dimension-caption" style="font-size:9px">사선 카운터 전면 약 1.800m</text><text x="58.144" y="161.504" class="room-dimension-caption" style="font-size:8.5px">최대 깊이 약 0.600m, 맞춤 상판</text><text x="184.94400000000002" y="235.088" text-anchor="middle" style="font-size:11px">안내, 응대</text></g><g pointer-events="none" class="room-caption"><text x="162.12" y="409.184" text-anchor="middle" style="font-size:13px">독서 구역</text><text x="162.12" y="422.184" text-anchor="middle" class="room-caption-small" style="font-size:11px">19.33m² · 5.85평</text><text x="162.12" y="435.184" text-anchor="middle" class="room-dimension-caption" style="font-size:11px">활동 영역 외접 4.500×4.700m</text><text x="162.12" y="448.184" text-anchor="middle" class="room-dimension-caption" style="font-size:8px">같은 열린 공간의 활동 구역</text></g><g pointer-events="none" class="room-caption av-caption"><text x="162.12" y="556.24704" text-anchor="middle" style="font-size:11px">시청각 수업 구역</text><text x="162.12" y="570.24704" text-anchor="middle" class="room-caption-small" style="font-size:9px">20.700m²</text><text x="162.12" y="584.24704" text-anchor="middle" class="room-caption-small" style="font-size:9px">6.26평</text><text x="162.12" y="598.24704" text-anchor="middle" class="room-dimension-caption" style="font-size:8.5px">폭 4.500m</text><text x="162.12" y="612.24704" text-anchor="middle" class="room-dimension-caption" style="font-size:8.5px">깊이 4.600m</text><text x="162.12" y="626.24704" text-anchor="middle" class="room-dimension-caption" style="font-size:8px">같은 열린 공간의 활동 구역</text></g><g class="excluded-space" text-anchor="middle"><text x="479.12" y="552.088">현재 추가 도면 범위 밖</text><text x="479.12" y="572.088">이번 면적에 포함하지 않음</text></g><g class="plan-entities"><g aria-label="P01 두 교실 앞벽" data-entity-id="wall:classroom-front" class="plan-entity entity-wall"><text x="301.6" y="177.368" class="entity-code" text-anchor="middle" pointer-events="all">P01</text></g><g aria-label="P02 교실 사이 중앙 파티션" data-entity-id="wall:central-divider" class="plan-entity entity-wall"><text x="489.12" y="339.672" class="entity-code" text-anchor="middle" pointer-events="all">P02</text></g><g aria-label="P03 원장실 옆벽" data-entity-id="wall:office-side" class="plan-entity entity-wall"><text x="560.1279999999999" y="90.1296" class="entity-code" text-anchor="middle" pointer-events="all">P03</text></g><g aria-label="P04 원장실 아래벽" data-entity-id="wall:office-back" class="plan-entity entity-wall"><text x="651.568" y="177.368" class="entity-code" text-anchor="middle" pointer-events="all">P04</text></g><g aria-label="P06 기존 호실 경계벽" data-entity-id="wall:shared-boundary" class="plan-entity entity-wall"><text x="286.24" y="359.96" class="entity-code" text-anchor="middle" pointer-events="all">P06</text></g><g aria-label="D01 일반 교실 1 출입문" data-entity-id="door:class-1" class="plan-entity entity-door"><text x="425.86400000000003" y="177.368" class="entity-code" text-anchor="middle" pointer-events="all">D01</text></g><g aria-label="D02 일반 교실 2 출입문" data-entity-id="door:class-2" class="plan-entity entity-door"><text x="517.1600000000001" y="177.368" class="entity-code" text-anchor="middle" pointer-events="all">D02</text></g><g aria-label="D03 원장실·창고 출입문" data-entity-id="door:office" class="plan-entity entity-door"><text x="560.1279999999999" y="111.432" class="entity-code" text-anchor="middle" pointer-events="all">D03</text></g><g aria-label="D00 기존 주출입문" data-entity-id="door:entry" class="plan-entity entity-door"><text x="519.696" y="81" class="entity-code" text-anchor="middle" pointer-events="all">D00</text></g><g aria-label="F01 사선 안내데스크" data-entity-id="furniture:loan-counter" class="plan-entity entity-furniture"><text x="146.67576" y="206.20296000000002" class="entity-code" text-anchor="middle" pointer-events="none">F01</text></g></g></svg>
